@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faBars, faThLarge } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  icons = {
+    menu: faBars,
+    nav: faThLarge
+  };
   title = 'dummy-theme';
 }
